@@ -187,22 +187,25 @@ function nextPage() {
     <h1> دوسي و غمضي عينك و فتحيها بعد 5 ثواني  </h1>
 <button onclick="showImage()">دوسي </button>
 
-<img id="myImage" src="love.jpg.jpeg"
-style="display:none; width:900px; border-radius:15px; margin-top:50px;">
-    <h1> The best picture we took 😂❤️  </h1>
+<div id="content" style="display:none;">
+
+    <img src="love.jpg.jpeg"
+    style="display:block; margin:auto; width:900px; border-radius:15px; margin-top:50px;">
+
+    <h1>The best picture we took 😂❤️</h1>
+
+</div>
 
   `;
 }
 
     function showImage() {
-    // ممكن نغير الزرار أو نخفيه
     document.querySelector("button").innerText = "استني شوية 👀";
 
     setTimeout(function () {
-        document.getElementById("myImage").style.display = "block";
-    }, 3000); // 3 ثواني
-
-    }
+        document.getElementById("content").style.display = "block";
+    }, 3000);
+}
     
 </script>
 
