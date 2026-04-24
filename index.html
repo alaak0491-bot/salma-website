@@ -6,36 +6,7 @@
 
 <style>
 
-.container {
-    text-align: center;
-    margin-top: 100px;
-    font-family: Arial;
-}
 
-.envelope {
-    font-size: 80px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.envelope:hover {
-    transform: scale(1.1);
-}
-
-.letter {
-    margin-top: 30px;
-    padding: 20px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-}
-
-.hidden {
-    display: none;
-}
     
 body {
     text-align: center;
@@ -164,29 +135,7 @@ function nextPage() {
     `;
 }
 
-    function nextPage() {
-    document.body.innerHTML = `
-    <div class="container">
-        <div class="envelope" onclick="openLetter()">
-            ✉️ افتحي
-        </div>
-
-        <div id="letter" class="letter hidden">
-            <h2>ملاحظة مهمة ❤️</h2>
-            <p>
-                اكتب هنا كلامك الحقيقي ليها 😌<br><br>
-                أنا آسف لو كنت سبب إني أزعلك…<br>
-                ومهم عندي إنك تكوني كويسة ❤️
-            </p>
-        </div>
-    </div>
-    `;
-}
-    function openLetter() {
-    document.getElementById("letter").classList.remove("hidden");
-        <button onclick="finalPage()">كملي </button>
-    `;
-}
+   
 
     
 
