@@ -153,40 +153,24 @@ function nextPage() {
     <h1>طبعا شايفك وانتي بتضحكي علي الهطل اللي بيحصل ده😂 </h1>
    <p>زي القمر كالعادة </p>
  <p>تعالي بقا عشان في كلام مهم </p>
-    <button onclick="nextPage5()">وريني  </button>
+    <button onclick="finalPage()">وريني  </button>
 `;
 }
 
-function nextPage5() {
-    document.body.innerHTML = `
-    <h1>بصي يا سلمي  </h1>
-   <p>You’re not just someone I care, you’re someone who makes everything around me feel lighter and better. </p>  
-      <p>The way you think, smile, and care about things makes you different in the best way </p>  
-   <p>I don’t always find the right words, but I know this for sure  that you mean a lot more to me than I can explain, and I’m really grateful to have you in my life ❤️ </p>  
-    <button onclick="nextPage6()">كملي   </button>
-`;
-}
-
-  function nextPage6() {
-    document.body.innerHTML = `
-    <h1>غمضي عينك و دوسي و بعدين افتحي بعد 5 ثواني   </h1>
-        <button onclick="finalPage()">ماشي    </button>
-`;
-}
 
     function finalPage() {
     document.body.innerHTML = `
     <div class="container">
         <div class="envelope" onclick="openLetter()">
-            ✉️ اضغط هنا
+            ✉️ افتحي الظرف
         </div>
 
         <div id="letter" class="letter hidden">
-            <h2>ملاحظة مهمة ❤️</h2>
+            <h2>بصي يا سلمي </h2>
             <p>
-                اكتب هنا كلامك الحقيقي ليها 😌<br><br>
-                أنا آسف لو كنت سبب إني أزعلك…<br>
-                ومهم عندي إنك تكوني كويسة ❤️
+                You’re not just someone I care, you’re someone who makes everything around me feel lighter and better.<br><br>
+                The way you think, smile, and care about things makes you different in the best way<br>
+                I don’t always find the right words, but I know this for sure  that you mean a lot more to me than I can explain, and I’m really grateful to have you in my life ❤️
             </p>
         </div>
     </div>
@@ -195,6 +179,16 @@ function nextPage5() {
 
     function openLetter() {
     document.getElementById("letter").classList.remove("hidden");
+}
+        <button onclick="nextPage6()">كملي  </button>
+
+
+
+     function nextPage6() {
+    document.body.innerHTML = `
+    <h1>غمضي عينك و دوسي و بعدين افتحي بعد 5 ثواني   </h1>
+        <button onclick="finalPage()">ماشي    </button>
+`;
 }
     
 </script>
