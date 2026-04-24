@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+<style>
+body {
+    text-align: center;
+    font-family: Arial;
+    background: #ffe6e6;
+    padding: 50px;
+}
+button {
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1 id="text">ممكن تديني دقيقة؟ 😅</h1>
+
+<button onclick="step1()">كمّلي بس 😭</button>
+
+<script>
+
+function step1() {
+    document.body.innerHTML = `
+    <h1>أنا لما زعلتك 🤡</h1>
+    <p>وأنا دلوقتي: محتاج اعتذر جامد</p>
+    <button onclick="step2()">طب اسمعي بقى بجد</button>
+    `;
+}
+
+function step2() {
+    document.body.innerHTML = `
+    <h1>بجد أنا آسف ❤️</h1>
+    <p>مكنتش أقصد أزعلك، وانتي مهمة عندي جداً</p>
+    <button onclick="step3()">لسه في حاجة</button>
+    `;
+}
+
+function step3() {
+    document.body.innerHTML = `
+    <h1>سؤال مهم 😏</h1>
+    <p>مين أحلى واحدة؟</p>
+    <button onclick="final()">انتي</button>
+    <button onclick="final()">برضو انتي</button>
+    `;
+}
+
+function final() {
+    document.body.innerHTML = `
+    <h1>يبقى خلاص 😌</h1>
+    <p>تقبلي اعتذاري؟</p>
+    <button onclick="yes()">آه ❤️</button>
+    <button onclick="no()">لسه بفكر 🤨</button>
+    `;
+}
+
+function yes() {
+    document.body.innerHTML = `<h1>كده رجعتلي الروح والله 😭❤️</h1>`;
+}
+
+function no() {
+    document.body.innerHTML = `<h1>طب خدّي وقتك... بس متطوليش 🥺</h1>`;
+}
+
+</script>
+
+</body>
+</html>
