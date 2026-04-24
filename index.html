@@ -47,7 +47,6 @@ button:hover {
 <button onclick="goNext()">يلا 😌</button>
 
 <script>
-    
 function goNext() {
     document.body.innerHTML = `
     <p>من يسكن البحر و يحبه الناس ؟</p>
@@ -94,13 +93,46 @@ function nextPage() {
 
     function rightAnswer() {
     document.body.innerHTML = `
-    <h1>كنت عارف انك هتختاري الاجابو الصح 😂❤️</h1>
+    <h1>كنت عارف انك هتختاري الاجابة الصح 😂❤️</h1>
     <p>يلا قربنا نخلص اللعبه </p>
 
-    <button onclick="finalPage()">آخر خطوة</button>
+    <button onclick="finalPage()">خش ع اللي بعده </button>
+    `;
+}
+
+function nextPage() {
+    document.body.innerHTML = `
+    <h1>سؤال بسيط 😏</h1>
+    <p>مين ال bestfriend لكريم ؟</p>
+
+    <button onclick="goFinal()"> salma</button>
+    <button onclick="goFinal()">سلمي  </button>
+    <button onclick="goFinal()">solly</button>
+    `;
+}
+
+
+function nextPage() {
+    document.body.innerHTML = `
+    <h1>كنت عارف علفكرا 🤪</h1>
+    <p>يلا اللي بعده ؟ 😂 ؟</p>
+
+    <button onclick="finalPage()">يلا </button>
     `;
 }
     
+function nextPage() {
+    document.body.innerHTML = `
+    <h1> طبعا شايفك وانتي بتضكي علي الهطل اللي بيحصل ده 😂</h1>
+    <p> قمر كالعادة </p>
+    <p>  تعالي بقا عشان في كلام مهم  </p>
+
+
+    <button onclick="finalPage()">وريني </button>
+    `;
+}
+
+
 </script>
 
 </body>
