@@ -29,7 +29,20 @@ button {
 <button onclick="startGame()">يلا بينا 😏</button>
     
 <script>
-
+    
+function continueGame() {
+    document.body.innerHTML = `
+    <h1>يلا نلعب 😏</h1>
+    <p>سؤال بسيط 👇</p>
+    
+    <h2>مين أكتر واحدة جميلة؟ 😌</h2>
+    
+    <button onclick="answer()">انتي</button>
+    <button onclick="answer()">برضو انتي</button>
+    <button onclick="answer()">أكيد انتي 😎</button>
+    `;
+}
+    
 function step1() {
     document.body.innerHTML = `
     <h1>أنا لما زعلتك 🤡</h1>
