@@ -1,90 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>For You ❤️</title>
+
 <style>
 body {
     text-align: center;
     font-family: Arial;
-    background: #ffe6e6;
-    padding: 50px;
+    background-color: #ffe6e6;
+    padding-top: 100px;
 }
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
 button {
-    padding: 15px 25px;
-    margin: 10px;
+    margin-top: 30px;
+    padding: 15px 30px;
     font-size: 18px;
     border: none;
     border-radius: 10px;
+    background-color: #ff4d6d;
+    color: white;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #ff1a4d;
+}
 </style>
+
 </head>
 
 <body>
 
-    <h1>عارف إنك مقفولة ومخنوقة </h1>
-<p>فـ تعالي نلعب لعبة صغيرة  </p>
+<h1>عارف انك زعلانه و مخنوقة مني </h1>
+<p>يلا نفصل و نلعب لعبه صغيرة ؟</p>
 
-<button onclick="startGame()">يلا بينا 😏</button>
-    
+<button onclick="goNext()">يلا 😌</button>
+
 <script>
-    
-function continueGame() {
-    document.body.innerHTML = `
-    <h1>يلا نلعب 😏</h1>
-    <p>سؤال بسيط 👇</p>
-    
-    <h2>مين أكتر واحدة جميلة؟ 😌</h2>
-    
-    <button onclick="answer()">انتي</button>
-    <button onclick="answer()">برضو انتي</button>
-    <button onclick="answer()">أكيد انتي 😎</button>
-    `;
+function goNext() {
+    // هنا هنحط الصفحة التانية بعدين
+    alert("لسه هنكمل 😉");
 }
-    
-function step1() {
-    document.body.innerHTML = `
-    <h1>أنا لما زعلتك 🤡</h1>
-    <p>وأنا دلوقتي: محتاج اعتذر جامد</p>
-    <button onclick="step2()">طب اسمعي بقى بجد</button>
-    `;
-}
-
-function step2() {
-    document.body.innerHTML = `
-    <h1>بجد أنا آسف ❤️</h1>
-    <p>مكنتش أقصد أزعلك، وانتي مهمة عندي جداً</p>
-    <button onclick="step3()">لسه في حاجة</button>
-    `;
-}
-
-function step3() {
-    document.body.innerHTML = `
-    <h1>سؤال مهم 😏</h1>
-    <p>مين أحلى واحدة؟</p>
-    <button onclick="final()">انتي</button>
-    <button onclick="final()">برضو انتي</button>
-    `;
-}
-
-function final() {
-    document.body.innerHTML = `
-    <h1>يبقى خلاص 😌</h1>
-    <p>تقبلي اعتذاري؟</p>
-    <button onclick="yes()">آه ❤️</button>
-    <button onclick="no()">لسه بفكر 🤨</button>
-    `;
-}
-
-function yes() {
-    document.body.innerHTML = `<h1>كده رجعتلي الروح والله 😭❤️</h1>`;
-}
-
-function no() {
-    document.body.innerHTML = `<h1>طب خدّي وقتك... بس متطوليش 🥺</h1>`;
-}
-
 </script>
 
 </body>
