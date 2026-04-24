@@ -48,9 +48,58 @@ button:hover {
 
 <script>
 function goNext() {
-    // هنا هنحط الصفحة التانية بعدين
-    alert("لسه هنكمل 😉");
+    document.body.innerHTML = `
+    <p>من يسكن البحر و يحبه الناس ؟</p>
+
+    <button onclick="wrong()">هيفاء وهبي </button>
+    <button onclick="right()">سبونج بوب سكوير بانتس </button>
+    <button onclick="wrong()">هيلو كيتي </button>
+    `;
 }
+
+    function wrong() {
+    alert("غلط 😤 ركزي كده شوية");
+}
+
+function right() {
+    document.body.innerHTML = `
+    <h1> 😂شطورة يا سلمي </h1>
+    <p>يلا بينا السؤال اللي بعده ؟</p>
+
+    <button onclick="nextPage()">يلا بينا </button>
+    `;
+}
+
+function nextPage() {
+    document.body.innerHTML = `
+    <h1>سؤال صعب </h1>
+    <p>اختاري كلمة توصفني </p>
+
+    <button id="a1" onclick="wrongMove('a1')">رخم</button>
+    <button id="a2" onclick="rightAnswer()">❤️صاحبي </button>
+    <button id="a3" onclick="wrongMove('a3')">مش بطيقك </button>
+    `;
+}
+
+    function wrongMove(id) {
+    let btn = document.getElementById(id);
+
+    btn.style.position = "relative";
+    btn.style.left = Math.random() * 200 + "px";
+    btn.style.top = Math.random() * 50 + "px";
+
+    btn.innerText = "لاا 😤 مش هتختارني";
+}
+
+    function rightAnswer() {
+    document.body.innerHTML = `
+    <h1>كنت عارف انك هتختاري الاجابو الصح 😂❤️</h1>
+    <p>يلا قربنا نخلص اللعبه </p>
+
+    <button onclick="finalPage()">آخر خطوة</button>
+    `;
+}
+    
 </script>
 
 </body>
