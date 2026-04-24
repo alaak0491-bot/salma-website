@@ -192,6 +192,14 @@ style="display:none; width:250px; border-radius:15px; margin-top:20px;">
   `;
 }
 
+    function showImage() {
+    // ممكن نغير الزرار أو نخفيه
+    document.querySelector("button").innerText = "استني شوية 👀";
+
+    setTimeout(function () {
+        document.getElementById("myImage").style.display = "block";
+    }, 3000); // 3 ثواني
+}
     
 </script>
 
